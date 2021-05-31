@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/logo2.png"/>
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Restaurant Website</title>
 
     <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/restaurant-style.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <!-- Reset styles -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+
+    <!-- Google Fonts Muli -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -58,7 +67,7 @@
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
-            <h2 class="text-center">Explore</h2>
+            <h1 class="text-center">Categories</h1>
 
             <a href="category-foods.html">
             <div class="box-3 float-container">
@@ -129,10 +138,49 @@
                         <h3 class="float-text text-white">Juices & Shakes</h3>
                     </div>
                     </a>
-
+                    
             <div class="clearfix"></div>
         </div>
+        
     </section>
+    
+        <section class="wrapper">
+            <!--div class="textcontainer">
+                <span class="particletext hearts">Hearts</span>
+             </div-->
+             <h2 class="text-center">Explore and Satisfy ur Special Cravings :)</h2>
+            <div class="container1">
+              <span class="arrow arrow-left">&#60;</span>
+              <span class="arrow arrow-right">&#62;</span>
+        
+              <div class="d-flex">
+        
+                <div class="card">
+                  <div class="img__container">
+                    <img src="images/salad.jpg" alt="salad" class="card__img">
+                  </div>
+                  <p class="card__txt">Crispy Crouton Salad</p>
+                </div>
+                <div class="card">
+                  <img src="images/kabab.jpg" alt="pancake" class="card__img">
+                  <p class="card__txt">Spicy kabobs</p>
+                </div>
+                <div class="card">
+                  <img src="images/donuts.jpg" alt="donuts" class="card__img">
+                  <p class="card__txt">Crispy and Creamy Doughnuts</p>
+                </div>
+                <div class="card">
+                  <img src="images/pza.jpg" alt="pizza" class="card__img">
+                  <p class="card__txt">Perfect Neapolitan Pizza</p>
+                </div>
+                <div class="card">
+                  <img src="images/pancake.jpg" alt="pancakes" class="card__img">
+                  <p class="card__txt">Pancakes with yogurt</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
     <!-- Categories Section Ends Here -->
 
     
@@ -144,7 +192,10 @@
             <ul>
                 
                 <li>
-                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/github.png"></a>
+                    <center>
+                        <a href="#"><img src="https://img.icons8.com/fluent/50/000000/github.png" ></a>
+                    </center>
+                    
                 </li>
             </ul>
         </div>
@@ -158,6 +209,7 @@
         </div>
     </section>
     <!-- footer Section Ends Here -->
+
 
 </body>
 </html>
