@@ -20,6 +20,7 @@
 }
 .text-center{
     text-align: center;
+    
 }
 .text-left{
     text-align: left;
@@ -34,7 +35,7 @@
 }
 
 a{
-    color: #994bf3;
+    color: #bb0b63;
     text-decoration: none;
 }
 a:hover{
@@ -48,7 +49,7 @@ a:hover{
     border-radius: 15px;
 }
 .btn-primary{
-    background-color: #994bf3;
+    background-color: #f0b6c0;
     color: white;
     cursor: pointer;
 }
@@ -56,6 +57,14 @@ a:hover{
     color: white;
     background-color: #35096e;
 }
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-family: "Pacifico";
+    font-size: 50px;
+    width: 700px;
+    color: #2f3542;
+  }
 h2{
     color: #2f3542;
     font-size: 2rem;
@@ -100,10 +109,13 @@ fieldset{
 }
 
 
+
+
+
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,6 +133,11 @@ fieldset{
 
 /* CSS for Categories */
 .categories{
+    /*background-image: url(../images/bg6.jpg);*/
+    
+    background-color:  #F1E8E6;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 4% 0;
 }
 
@@ -128,6 +145,11 @@ fieldset{
     width: 28%;
     float: left;
     margin: 2%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-shadow: 0px 17px 34px -20px #fa7193;
+            box-shadow: 0px 17px 34px -20px #fa7193;
+    
 }
 
 
@@ -216,3 +238,11 @@ fieldset{
         width: 100%;
     }
 }
+
+.box-3:hover{
+    filter:saturate(1);
+    filter: blur(0px);
+    transform:scale(1.1);
+    transition: 300ms all;
+}
+/**/
