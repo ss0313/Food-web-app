@@ -1,12 +1,10 @@
-/* font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 /* background */
 body {
-  font-family: 'Roboto', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 /* title */
 h1 {
-  font-family: 'Roboto', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 0.5px;
   font-size: 35px;
   margin-bottom: 10px;
@@ -15,7 +13,7 @@ h1 {
 /* subtitle */
 h2 {
   margin-top: 0px;
-  font-family: 'Roboto', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 0.5px;
   font-size: 10px;
 }
@@ -38,7 +36,7 @@ input:first-of-type
 input, textarea {
   font-size: 10px;
   padding: 15px 10px 10px;
-  font-family: 'Roboto', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 1px solid #cecece;
   background: #F3F5F6;
   color:#4c4c4c;
@@ -93,10 +91,10 @@ button:hover {
 .button {
   display: inline-block;
    text-align: center;
-  margin-left: 55px;
+  margin-left: 65px;
 }
 .message {
-    font-family: 'Roboto', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:1.1em;
     display:none;
     padding-top:10px;
@@ -157,11 +155,12 @@ button:hover {
 }
 
 .food-search2{
-    background-image: url(../images/bg6.jpg);
+    background-image: url(http://res.cloudinary.com/oscartbeamish/image/upload/v1504172576/14bc155f03a9be4e10c0bd6d34067f6e_ng1urv.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 7% 0;
+    opacity: 80%;
 }
 
 .food-search2 input[type="search"]{
