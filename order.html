@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/logo2.png"/>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact form</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/restaurant-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Reset styles -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+
+    <!-- Google Fonts Muli -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="foods.html">Foods</a>
+                    </li>
+                    <li>
+                        <a href="order.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="gray-block"></div>
+        <!-- title -->
+        <div id="tc" class="title-container">
+        
+            <h1>Contact Us :)</h1>
+        
+        </div>
+        <!-- main container -->
+        <div id="c" class="container2">
+        <!-- image -->
+        <div class="image-container">
+            <img src="http://res.cloudinary.com/oscartbeamish/image/upload/v1504172576/14bc155f03a9be4e10c0bd6d34067f6e_ng1urv.jpg" class="img">
+        </div>
+        <!-- text -->
+        <div class="text-container">
+            <!-- name input -->
+            <input type="text" name="name" placeholder="Name" /><br/>
+            <!-- email input -->
+            <input  type="email" name="email" placeholder="Email" /><br/>
+            <!-- message input -->
+            <textarea type="text" name="message" placeholder="Message"></textarea><br/>
+            <!-- sent -->
+            <div class="message">Message Sent</div>
+            <div class="button">
+            <!-- button -->
+            <button id="submit" type="submit">
+            Send
+            </button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</body>
+</html>
