@@ -3,6 +3,13 @@
     <div class="wrapper">
         <h1>Add Admin</h1>
         <br><br>
+        <?php 
+            if(isset($_SESSION['add'])){
+                 //Checking whether the Session is Set of Not{
+                echo $_SESSION['add']; //Display the session message if set
+                unset($_SESSION['add']); //Remove Session Message. If you refresh added admin will vanish.
+            }
+        ?>
         <form action="" method="POST">
             <table class="table-30">
                 <tr>
@@ -32,7 +39,6 @@
         </form>
     </div>
 </div>
-
 <?php include('partials/footer.php'); ?>
 <?php 
     //Process the Value from Form and Save it in Database
@@ -50,11 +56,29 @@
         $sql = "INSERT INTO tbl_admin SET 
             full_name='$full_name',
             username='$username',
-            password='$password'
+            password ='$password'
         ";
  
-        //3. Executing Query and Saving Data into Datbase
-        $res = mysqli_query($conn, $sql) or die(mysqli_error());
-    }
+       //3. Executing Query and Saving Data into Datbase
+       $res = mysqli_query($conn, $sql) or die(mysqli_error());
+
+       //4. Check whether the (Query is Executed) data is inserted or not and display appropriate message
+       if($res==TRUE)
+       {
+           //Data Inserted
+           //echo "Data Inserted";
+           //Create a Session Variable to Display Message
+           $_SESSION['add'] = "<div class='success'>Admin Added Successfully.</div>";
+           //Redirect Page to Manage Admin when success 
+           header("location:".SITEURL.'admin/manage-admin.php'); //. is used to concatenate
+       }
+       else
+       {
+           //Failed to Insert Data
+           //Create a Session Variable to Display Message
+           $_SESSION['add'] = "<div class='error'>Failed to Add Admin.</div>";
+           //Redirect Page to Add Admin
+           header("location:".SITEURL.'admin/add-admin.php');
+       }
+   }   
 ?>
-        
