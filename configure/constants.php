@@ -1,5 +1,6 @@
   <?php 
     //Create Constants to Store Non Repeating Values. Constants are stored by putting CAPS letters.
+    define('SITEURL','http://localhost/food-order/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
