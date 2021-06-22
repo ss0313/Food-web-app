@@ -6,11 +6,8 @@
 .container{
     width: 80%;
     margin: 0 auto;
-    padding: 1%;
 }
-.img-responsive{
-    width: 100%;
-}
+
 .img-curve{
     border-radius: 15px;
 }
@@ -60,7 +57,7 @@ a:hover{
 h1 {
     text-align: center;
     margin: 50px;
-    font-family: "Pacifico";
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
     width: 700px;
     color: #2f3542;
@@ -92,20 +89,20 @@ fieldset{
 /* CSSS for navbar section */
 
 .logo{
-    width: 10%;
     float: left;
+    width: 9%;
+    height: 9%;
 }
-.menu{
-    line-height: 60px;
-}
+
 .menu ul{
     list-style-type: none;
 }
 
 .menu ul li{
     display: inline;
-    padding: 1%;
+    padding-left: 1%;
     font-weight: bold;
+    padding-right: 3%;
 }
 
 
